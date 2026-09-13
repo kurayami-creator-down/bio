@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kurayami</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Фоновое видео или картинка -->
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/background.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+
+    <!-- Основной блок профиля -->
+    <div class="profile-container">
+        <!-- Аватар -->
+        <div class="avatar-wrapper">
+            <img src="assets/avatar.gif" alt="avatar" class="avatar">
+        </div>
+
+        <!-- Ник -->
+        <h1 class="username">kurayami <span class="verified">✦</span></h1>
+
+        <!-- Описание -->
+        <p class="bio">
+            Серега Пират в фиолетовых водах 💜<br>
+            Dota 2 • Мемы • Фиолетовый вайб
+        </p>
+
+        <!-- Ссылки -->
+        <div class="links">
+            <a href="https://discord.gg/твой_сервер" class="link-item" target="_blank">
+                <i class="fab fa-discord"></i>
+                <span>Discord</span>
+            </a>
+            <a href="https://t.me/твой_телеграм" class="link-item" target="_blank">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram</span>
+            </a>
+            <a href="https://steamcommunity.com/id/твой_стим" class="link-item" target="_blank">
+                <i class="fab fa-steam"></i>
+                <span>Steam</span>
+            </a>
+            <a href="https://github.com/твой_гитхаб" class="link-item" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+
+        <!-- Кнопка музыки -->
+        <button id="music-toggle" class="music-btn">
+            <i class="fas fa-play"></i>
+        </button>
+        <audio id="bg-music" loop>
+            <source src="assets/music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
